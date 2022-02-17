@@ -74,7 +74,7 @@ main {
   position: relative;
   padding: 1rem;
   margin-top: 100vh;
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
 }
 
 main::before {
@@ -85,7 +85,7 @@ main::before {
   top: 0;
   left: 0;
   top: -100vh;
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
 }
 
 main p {
