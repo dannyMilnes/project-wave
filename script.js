@@ -1,5 +1,5 @@
 $('body').on('click touchstart', function () {
-    const videoElement = document.getElementById('home_video');
+    const videoElement = document.getElementById('liquidBackground');
     if (videoElement.playing) {
         // video is already playing so do nothing
     }
