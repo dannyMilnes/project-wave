@@ -1,3 +1,20 @@
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+    get: function () {
+        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+    }
+});
+
+const videoElement = document.getElementById('liquidBackground');
+videoElement.addEventListener('suspend', () => {
+    // suspend invoked
+    // show play button
+});
+
+videoElement.addEventListener('play', () => {
+    // video is played
+    // remove play button UI
+});
+
 $('body').on('click touchstart', function () {
     const videoElement = document.getElementById('liquidBackground');
     if (videoElement.playing) {
