@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: -webkit-fill-available;
     position: relative;
   }
 }
@@ -60,13 +61,15 @@ body {
   // background-size: cover;
   // background-position: center;
 
-  // height: 100vh;
+  height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 main {
   background: #1d1d1d;
   position: relative;
   margin-top: 100vh;
+  min-height: -webkit-fill-available;
 
   &::before {
     content: "";
