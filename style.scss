@@ -71,6 +71,8 @@ main {
   background: #1d1d1d;
   position: relative;
   margin-top: 100vh;
+  min-height: -webkit-fill-available;
+  height: -webkit-fill-available;
 
   &::before {
     content: "";
