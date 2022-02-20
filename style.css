@@ -1,27 +1,13 @@
-body {
-  min-height: -webkit-fill-available;
-  min-width: -webkit-fill-available;
-}
-
-html {
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
-}
-
 .video-header {
   position: absolute;
   text-align: center;
   width: 100vw;
   height: 100vh;
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
 }
 
 .video-header, .video-header video, .video-header .viewport-header {
   width: 100vw;
   height: 100vh;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +22,6 @@ html {
 .video-header .viewport-header {
   display: -webkit-box;
   display: -ms-flexbox;
-  overflow: hidden;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -72,6 +57,12 @@ html {
 
 body {
   margin: 0;
+  background-image: url("./liquidBackgroundLoop.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 main {
@@ -79,7 +70,6 @@ main {
   position: relative;
   padding: 1rem;
   margin-top: 100vh;
-  /* height: -webkit-fill-available; */
 }
 
 main::before {
@@ -90,7 +80,6 @@ main::before {
   top: 0;
   left: 0;
   top: -100vh;
-  /* height: -webkit-fill-available; */
 }
 
 main p {
