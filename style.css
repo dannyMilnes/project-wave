@@ -16,6 +16,13 @@
   left: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .video-header, .video-header video, .video-header .viewport-header {
+    min-height: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+}
+
 .video-header video {
   background: #1d1d1d;
   -o-object-fit: cover;
@@ -50,6 +57,8 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
+  min-height: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 
 html {
@@ -77,6 +86,13 @@ main::before {
   top: 0;
   left: 0;
   top: -100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  main::before {
+    min-height: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
 }
 
 main p {
