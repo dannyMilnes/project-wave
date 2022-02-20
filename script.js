@@ -16,3 +16,8 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $("#click-down").trigger("click");
+    console.log("Button Down Clicked");
+});
