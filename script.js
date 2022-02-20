@@ -18,6 +18,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $("#click-down").trigger("click");
-    console.log("Button Down Clicked");
+    setTimeout(function () {
+        $('#click-down').trigger('click');
+        console.log('Button Down Clicked');
+    }, 2000);
+    $('liquidBackground').controls = false;
 });
