@@ -3,6 +3,10 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
 .video-header, .video-header video, .video-header .viewport-header {
@@ -11,12 +15,16 @@
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
 .video-header video {
   background: #1d1d1d;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .video-header .viewport-header {
@@ -63,7 +71,6 @@ body {
 main {
   background: #1d1d1d;
   position: relative;
-  padding: 1rem;
   margin-top: 100vh;
 }
 
@@ -81,5 +88,36 @@ main p {
   max-width: 600px;
   margin: 1rem auto;
   color: white;
+}
+
+.sindey-enterance {
+  width: 100%;
+}
+
+.header-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 350px;
+  overflow: hidden;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.header-container__text {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+}
+
+.header-container__text h2 {
+  text-transform: uppercase;
+}
+
+.header-container__text h2, .header-container__text h3 {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
