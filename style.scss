@@ -10,6 +10,32 @@
   }
 }
 
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("./Fonts/Futura\ PT/FuturaPTMedium.otf");
+}
+
+@font-face {
+  font-family: "FuturaPTMediumOblique";
+  src: url("./Fonts/Futura\ PT/FuturaPTMediumOblique.otf");
+}
+h2 {
+  font-family: "FuturaPTMedium";
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "FuturaPTMediumOblique";
+  font-size: 26px;
+}
+
+h4 {
+  font-family: "FuturaPTMediumOblique";
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+
 .video-header {
   position: absolute;
   text-align: center;
@@ -110,5 +136,74 @@ main {
     h2, h3 {
       margin: 0;
     }
+  }
+}
+
+.event-card {
+  &__container {
+      position: relative;
+      margin: 6rem 0;
+
+    &::before {
+      content: "";
+      height: 42px;
+      width: 2px;
+      background: white;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+    }
+    &::after {
+      content: "";
+      height: 42px;
+      width: 2px;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: -67px;
+  }
+}
+
+.event-image {
+  width: 100%;
+  object-fit: cover;
+  &__container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-height: 450px;
+    @media only screen and (max-width: 768px) {
+      max-height: 250px;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 400px;
+  }
+}
+
+.btn {
+  &-primary {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: FuturaPTMediumOblique;
+    padding: 0.5rem 2rem;
   }
 }
